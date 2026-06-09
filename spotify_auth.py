@@ -21,6 +21,6 @@ def get_spotify():
             redirect_uri=os.getenv("SPOTIFY_REDIRECT_URI"),
             scope=SCOPE,
             cache_path=".spotify_token_cache",
-            open_browser=True,
+            open_browser=False,
         )
     )
